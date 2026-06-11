@@ -34,11 +34,11 @@ jobs:
 
          run: |
           echo "syncing the repo"
-          git clone https://github.com/Hasajapathirana/MagiskOnWSALocal.git --depth 1
+          git clone https://github.com/LSPosed/MagiskOnWSALocal.git --depth 1
           echo "sync completed"
           cd MagiskOnWSALocal
           echo "starting build"
-          ./scripts/build.sh --arch x64 --release-type retail --root-sol magisk --magisk-ver stable --gapps-brand MindTheGapps --gapps-variant pico --compress-format 7z
+          ./scripts/build.sh --arch x64 --release-type retail --root-sol magisk --magisk-ver stable --gapps-brand MindTheGapps --compress-format 7z
           echo "building completed"
           
        - name: Save
