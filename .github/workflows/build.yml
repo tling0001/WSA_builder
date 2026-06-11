@@ -42,7 +42,7 @@ jobs:
           echo "building completed"
           
        - name: Save
-         uses: actions/upload-artifact@v2
+         uses: actions/upload-artifact@v4
          with:
             name: WSA_Build
             path: /home/runner/work/WSA_builder/WSA_builder/MagiskOnWSALocal/output/*WSA*
