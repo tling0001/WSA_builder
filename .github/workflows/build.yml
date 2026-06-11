@@ -38,7 +38,7 @@ jobs:
           echo "sync completed"
           cd MagiskOnWSALocal
           echo "starting build"
-          ./scripts/build.sh --arch x64 --release-type retail --root-sol magisk --magisk-ver stable --compress-format 7z
+          ./scripts/build.sh --arch x64 --release-type retail --root-sol magisk --magisk-ver stable --install-gapps --remove-amazon --compress-format 7z
           echo "building completed"
           
        - name: Save
